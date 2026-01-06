@@ -138,11 +138,11 @@
     .hero-text {
       position: relative;
       z-index: 3;
-      z-index: 3;
-     text-align: right; 
-     display: flex; 
-     flex-direction: column;
-     align-items: flex-end;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
     
     .hero-label {
       display: inline-flex;
@@ -422,6 +422,9 @@
     .section-header {
       text-align: right;
       margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
     }
     
     .section-label {
@@ -461,7 +464,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
-       direction: rtl;
+      direction: rtl;
     }
     
     .stats-grid {
@@ -954,11 +957,11 @@
 </div>
        </div>
       </div>
-     <div class="about-text" style="text-align: right; display: flex; flex-direction: column; align-items: flex-end;">
+      <div class="about-text" style="text-align: right; display: flex; flex-direction: column; align-items: flex-end;">
        <p id="about-description" class="about-description">I'm a UI/UX designer who believes in the power of thoughtful design to solve real-world problems. My approach combines deep user research with clean, intuitive interfaces that feel natural and effortless.</p>
        <p class="about-description">Based in Mansoura, with 2+ years of experience, I transform complex challenges into elegant solutions that users love. Every pixel has purpose, and every interaction tells a story.</p>
        <div class="stats-grid">
-        <div class="stat-card">
+        <div class="stat-card" style="display: flex; flex-direction: column; align-items: flex-end;">
          <div class="stat-number">
           2+
          </div>
@@ -966,7 +969,7 @@
           Years Experience
          </div>
         </div>
-        <div class="stat-card">
+        <div class="stat-card" style="display: flex; flex-direction: column; align-items: flex-end;">
          <div class="stat-number">
           10+
          </div>
@@ -983,13 +986,16 @@
 <style>
   .process-section-desktop {
     padding: 6rem 2rem;
-    text-align: left; /* Side aligned for Desktop */
+    text-align: right; /* Right aligned for Desktop */
     background: transparent;
   }
 
   .process-container-desktop {
     max-width: 1400px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .process-grid-desktop {
@@ -998,6 +1004,7 @@
     gap: 2rem;
     width: 100%;
     margin-top: 3rem;
+    direction: rtl;
   }
 
   .process-card-desktop {
@@ -1007,8 +1014,10 @@
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to start for side alignment */
+    align-items: flex-end; /* Align items to end for right alignment */
+    text-align: right;
     transition: all 0.3s ease;
+    direction: ltr; /* Keep text flow LTR for English */
   }
 
   .process-card-desktop:hover {
@@ -1047,11 +1056,11 @@
 <section class="process-section-desktop">
   <div class="process-container-desktop">
     <span class="section-label" style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 50px; font-size: 0.875rem; color: #A5B4FC; margin-bottom: 1.5rem;">My Approach</span>
-    <h2 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 1.5rem; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Design Process</h2>
-    <p style="color: #94A3B8; font-size: 1.25rem; max-width: 700px;">A structured approach to solving problems and creating intuitive user experiences.</p>
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 1.5rem; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: right;">Design Process</h2>
+    <p style="color: #94A3B8; font-size: 1.25rem; max-width: 700px; text-align: right;">A structured approach to solving problems and creating intuitive user experiences.</p>
     
-   <div class="process-grid-desktop" style="direction: rtl;">
-    <div class="process-card-desktop" style="align-items: flex-end; text-align: right; direction: ltr;">
+    <div class="process-grid-desktop">
+      <div class="process-card-desktop">
         <div class="process-number-desktop">1</div>
         <h3 class="process-card-title-desktop">Discover</h3>
         <p class="process-card-text-desktop">Understanding the problem through user research, interviews, and competitive analysis.</p>
@@ -1074,6 +1083,7 @@
     </div>
   </div>
 </section>
+!-- Projects Section -->
    <section class="content-section">
     <div class="section-container">
      <div class="section-header"><span class="section-label">Portfolio</span>
@@ -1091,7 +1101,7 @@
        </div>
       </div>
       <div class="project-card">
-       <div class="project-content">
+       <div class="project-content" style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; direction: ltr;">
         <h3 class="project-title">Career Compass</h3>
 <p class="project-description">Career Compass uses AI to assess your skills and personality, guide your career path, track progress, and connect you with top opportunities.</p>
 <a href="https://www.behance.net/gallery/233496901/Career-compass" target="_blank" class="project-link">
@@ -1100,7 +1110,7 @@
        </div>
       </div>
        <div class="project-card">
-       <div class="project-content">
+       <div class="project-content" style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; direction: ltr;">
         <h3 class="project-title">Just Run</h3>
         <p class="project-description">Just Run is an iOS fitness app with personalized workouts, nutrition plans, and daily progress tracking.</p>
 <a href="https://www.behance.net/gallery/227166599/Fitness-Journey-UX-UI-Concept" target="_blank" class="project-link">
@@ -1109,7 +1119,7 @@
        </div>
       </div>
       <div class="project-card">
-       <div class="project-content">
+       <div class="project-content" style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; direction: ltr;">
         <h3 class="project-title">See More</h3>
 <p class="project-description">Explore more projects and follow my work on Behance.</p>
 <a href="https://www.behance.net/hanaamahmoud7" target="_blank" class="project-link">
@@ -1208,7 +1218,7 @@
     </div>
    </section><!-- Footer -->
    <footer class="footer">
-    <p class="footer-text">Â© 2026 Hanaa Mahmoud. Designed with passion </p>
+    <p class="footer-text">Â©️ 2026 Hanaa Mahmoud. Designed with passion </p>
    </footer>
   </div>
   <script src="/_sdk/element_sdk.js"></script>
@@ -1365,12 +1375,3 @@
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b94410226d33d73',t:'MTc2NzYyOTUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
-
-
-
-
-
-
-
-
-
