@@ -972,7 +972,103 @@
       </div>
      </div>
     </div>
-   </section><!-- Projects Section -->
+   </section>
+   <!-- 3. Design Process Section (Desktop Version - Side Aligned) -->
+<style>
+  .process-section-desktop {
+    padding: 6rem 2rem;
+    text-align: left; /* Side aligned for Desktop */
+    background: transparent;
+  }
+
+  .process-container-desktop {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .process-grid-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+    gap: 2rem;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .process-card-desktop {
+    background: rgba(30, 41, 59, 0.3);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    border-radius: 25px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to start for side alignment */
+    transition: all 0.3s ease;
+  }
+
+  .process-card-desktop:hover {
+    background: rgba(99, 102, 241, 0.05);
+    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateY(-5px);
+  }
+
+  .process-number-desktop {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+
+  .process-card-title-desktop {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .process-card-text-desktop {
+    font-size: 1rem;
+    color: #94A3B8;
+    line-height: 1.6;
+  }
+</style>
+
+<section class="process-section-desktop">
+  <div class="process-container-desktop">
+    <span class="section-label" style="display: inline-block; padding: 0.5rem 1.5rem; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 50px; font-size: 0.875rem; color: #A5B4FC; margin-bottom: 1.5rem;">My Approach</span>
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 1.5rem; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Design Process</h2>
+    <p style="color: #94A3B8; font-size: 1.25rem; max-width: 700px;">A structured approach to solving problems and creating intuitive user experiences.</p>
+    
+    <div class="process-grid-desktop">
+      <div class="process-card-desktop">
+        <div class="process-number-desktop">1</div>
+        <h3 class="process-card-title-desktop">Discover</h3>
+        <p class="process-card-text-desktop">Understanding the problem through user research, interviews, and competitive analysis.</p>
+      </div>
+      <div class="process-card-desktop">
+        <div class="process-number-desktop">2</div>
+        <h3 class="process-card-title-desktop">Define</h3>
+        <p class="process-card-text-desktop">Creating user personas, journey maps, and defining the core value proposition.</p>
+      </div>
+      <div class="process-card-desktop">
+        <div class="process-number-desktop">3</div>
+        <h3 class="process-card-title-desktop">Design</h3>
+        <p class="process-card-text-desktop">Building wireframes, interactive prototypes, and high-fidelity UI designs.</p>
+      </div>
+      <div class="process-card-desktop">
+        <div class="process-number-desktop">4</div>
+        <h3 class="process-card-title-desktop">Deliver</h3>
+        <p class="process-card-text-desktop">Usability testing, gathering feedback, and handing over assets to developers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+!-- Projects Section -->
    <section class="content-section">
     <div class="section-container">
      <div class="section-header"><span class="section-label">Portfolio</span>
@@ -1264,6 +1360,7 @@
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b94410226d33d73',t:'MTc2NzYyOTUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
+
 
 
 
