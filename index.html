@@ -132,12 +132,17 @@
       grid-template-columns: 1fr 1fr;
       gap: 6rem;
       align-items: center;
+      direction: rtl;
     }
     
     .hero-text {
       position: relative;
       z-index: 3;
-    }
+      z-index: 3;
+     text-align: right; 
+     display: flex; 
+     flex-direction: column;
+     align-items: flex-end;
     
     .hero-label {
       display: inline-flex;
@@ -415,7 +420,7 @@
     }
     
     .section-header {
-      text-align: center;
+      text-align: right;
       margin-bottom: 4rem;
     }
     
@@ -447,7 +452,7 @@
       font-size: 1.25rem;
       color: #94A3B8;
       max-width: 700px;
-      margin: 0 auto;
+      margin: 0;
     }
     
     /* About Section */
@@ -456,6 +461,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 4rem;
       align-items: center;
+       direction: rtl;
     }
     
     .stats-grid {
@@ -948,7 +954,7 @@
 </div>
        </div>
       </div>
-      <div class="about-text">
+     <div class="about-text" style="text-align: right; display: flex; flex-direction: column; align-items: flex-end;">
        <p id="about-description" class="about-description">I'm a UI/UX designer who believes in the power of thoughtful design to solve real-world problems. My approach combines deep user research with clean, intuitive interfaces that feel natural and effortless.</p>
        <p class="about-description">Based in Mansoura, with 2+ years of experience, I transform complex challenges into elegant solutions that users love. Every pixel has purpose, and every interaction tells a story.</p>
        <div class="stats-grid">
@@ -1044,8 +1050,8 @@
     <h2 style="font-family: 'Playfair Display', serif; font-size: 3.5rem; font-weight: 900; margin-bottom: 1.5rem; background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Design Process</h2>
     <p style="color: #94A3B8; font-size: 1.25rem; max-width: 700px;">A structured approach to solving problems and creating intuitive user experiences.</p>
     
-    <div class="process-grid-desktop">
-      <div class="process-card-desktop">
+   <div class="process-grid-desktop" style="direction: rtl;">
+    <div class="process-card-desktop" style="align-items: flex-end; text-align: right; direction: ltr;">
         <div class="process-number-desktop">1</div>
         <h3 class="process-card-title-desktop">Discover</h3>
         <p class="process-card-text-desktop">Understanding the problem through user research, interviews, and competitive analysis.</p>
@@ -1075,9 +1081,9 @@
       <h2 class="section-title">Selected Work</h2>
       <p class="section-description">Explore my recent projects and case studies showcasing my design process.</p>
      </div>
-     <div class="projects-grid">
+     <div class="projects-grid" style="direction: rtl;">
       <div class="project-card">
-       <div class="project-content">
+       <div class="project-content" style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; direction: ltr;">
         <h3 class="project-title">Al-Waha</h3>
         <p class="project-description">Employment platform connecting Egyptian professionals with international opportunities and helping companies find qualified talent abroad.</p>
 <a href="https://www.behance.net/gallery/241298775/_" target="_blank" class="project-link">
@@ -1360,6 +1366,7 @@
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b94410226d33d73',t:'MTc2NzYyOTUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
+
 
 
 
