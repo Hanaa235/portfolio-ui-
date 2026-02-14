@@ -827,53 +827,43 @@
       }
     }
     
-      /* --- Full Responsive Fix --- */
+       /* --- Responsive Flow Fix --- */
     @media (max-width: 1024px) {
+      /* تحويل العناصر من أفقي لرأسي بشكل تلقائي */
       .hero-content, .about-grid, .projects-grid, .contact-grid, .stats-grid {
-        grid-template-columns: 1fr !important;
         display: flex !important;
         flex-direction: column !important;
-        gap: 2rem !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 3rem !important;
       }
+
+      /* تصغير حجم الخطوط بشكل متناسب */
+      .hero-title { font-size: clamp(2.5rem, 8vw, 4rem) !important; }
+      .section-title { font-size: clamp(2rem, 6vw, 3rem) !important; }
       
-      .hero-text { text-align: center; order: 2; }
-      .device-showcase { order: 1; margin-bottom: 2rem; }
-      .hero-title { font-size: 3rem !important; }
-      
-      .image-frame {
-        width: 100% !important;
-        max-width: 400px;
+      /* الحفاظ على حجم الصور والأجهزة لتناسب الشاشة */
+      .image-frame, .phone-mockup {
+        max-width: 100% !important;
         height: auto !important;
-        aspect-ratio: 1/1;
-        margin: 0 auto;
       }
-      
-      .section-title { font-size: 2.5rem !important; }
+
+      /* جعل الوصف يأخذ العرض الكامل */
+      .hero-description, .section-description {
+        max-width: 100% !important;
+      }
     }
 
     @media (max-width: 768px) {
+      /* تقليل المسافات الجانبية في الموبايل */
       .hero-section, .content-section {
-        padding: 3rem 1.5rem !important;
+        padding: 2rem 1rem !important;
       }
       
-      /* حل مشكلة خطوات الـ Process والـ Cards */
-      .process-step, .stat-card, .project-card, .contact-card {
+      /* تصغير الكروت لتناسب عرض الموبايل */
+      .stat-card, .project-card, .contact-card {
         width: 100% !important;
-        margin: 0 0 1.5rem 0 !important;
       }
-      
-      .hero-cta {
-        width: 100%;
-        justify-content: center;
-      }
-
-      /* التأكد من أن الصور تظهر دائماً */
-      .phone-mockup {
-        width: 280px !important;
-        height: 550px !important;
-      }
-      
-      .floating-icon { display: none; } /* إخفاء الأيقونات الطائرة لتقليل الزحمة */
     }
 </style>
   <style>@view-transition { navigation: auto; }</style>
@@ -1349,6 +1339,7 @@
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b94410226d33d73',t:'MTc2NzYyOTUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
+
 
 
 
