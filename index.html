@@ -826,101 +826,41 @@
         opacity: 0;
       }
     }
-    /* ===== Responsive Fix Patch ===== */
+   /* ===== Fluid Scale System ===== */
 
-/* allow scrolling on mobile */
-html, body {
-  height: auto !important;
-  overflow-x: hidden !important;
-  overflow-y: auto !important;
+html{
+  font-size: clamp(12px, 1vw, 16px);
 }
 
-/* wrapper fix */
-#app-wrapper{
-  height:auto !important;
-  overflow:visible !important;
+/* scale whole layout proportionally */
+@media (max-width:1400px){
+  body{
+    zoom:0.9;
+  }
 }
 
-/* hero layout mobile */
+@media (max-width:1200px){
+  body{
+    zoom:0.8;
+  }
+}
+
+@media (max-width:992px){
+  body{
+    zoom:0.7;
+  }
+}
+
 @media (max-width:768px){
-
-  .hero-content{
-    grid-template-columns:1fr !important;
-    gap:2rem !important;
-    text-align:center;
+  body{
+    zoom:0.6;
   }
-
-  .hero-title{
-    font-size:2.2rem !important;
-    line-height:1.3;
-  }
-
-  .hero-subtitle{
-    font-size:1.2rem;
-  }
-
-  .hero-description{
-    font-size:1rem;
-    margin:auto;
-  }
-
-  .device-showcase{
-    order:-1;
-  }
-
-  .phone-mockup{
-    width:240px !important;
-    height:500px !important;
-  }
-
-  .image-frame{
-    width:100% !important;
-    height:420px !important;
-  }
-
-  .about-grid{
-    grid-template-columns:1fr !important;
-    text-align:center;
-  }
-
-  .projects-grid{
-    grid-template-columns:1fr !important;
-  }
-
-  .process-grid-desktop{
-    grid-template-columns:1fr !important;
-  }
-
-  .contact-grid{
-    grid-template-columns:1fr !important;
-  }
-
-  .section-title{
-    font-size:2rem !important;
-  }
-
 }
 
-/* small phones */
 @media (max-width:480px){
-
-  .hero-title{
-    font-size:1.8rem !important;
+  body{
+    zoom:0.5;
   }
-
-  .section-title{
-    font-size:1.6rem !important;
-  }
-
-  .phone-mockup{
-    width:200px !important;
-    height:420px !important;
-  }
-
-  .stat-number{
-    font-size:2rem;
-  }
-
 }
 </style>
   <style>@view-transition { navigation: auto; }</style>
@@ -1396,6 +1336,7 @@ html, body {
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b94410226d33d73',t:'MTc2NzYyOTUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
+
 
 
 
