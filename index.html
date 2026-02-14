@@ -827,43 +827,78 @@
       }
     }
     
-       /* --- Responsive Flow Fix --- */
+          /* --- Ultimate Mobile Fix (iPhone & Android) --- */
     @media (max-width: 1024px) {
-      /* تحويل العناصر من أفقي لرأسي بشكل تلقائي */
-      .hero-content, .about-grid, .projects-grid, .contact-grid, .stats-grid {
+      /* فك القيود اللي بتخلي العناصر تختفي أو تطير */
+      .hero-section, .content-section {
+        height: auto !important;
+        min-height: auto !important;
+        display: block !important;
+        padding: 4rem 1.5rem !important;
+      }
+
+      .hero-content, .about-grid, .projects-grid, .contact-grid {
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        text-align: center !important;
-        gap: 3rem !important;
-      }
-
-      /* تصغير حجم الخطوط بشكل متناسب */
-      .hero-title { font-size: clamp(2.5rem, 8vw, 4rem) !important; }
-      .section-title { font-size: clamp(2rem, 6vw, 3rem) !important; }
-      
-      /* الحفاظ على حجم الصور والأجهزة لتناسب الشاشة */
-      .image-frame, .phone-mockup {
-        max-width: 100% !important;
-        height: auto !important;
-      }
-
-      /* جعل الوصف يأخذ العرض الكامل */
-      .hero-description, .section-description {
-        max-width: 100% !important;
-      }
-    }
-
-    @media (max-width: 768px) {
-      /* تقليل المسافات الجانبية في الموبايل */
-      .hero-section, .content-section {
-        padding: 2rem 1rem !important;
-      }
-      
-      /* تصغير الكروت لتناسب عرض الموبايل */
-      .stat-card, .project-card, .contact-card {
+        gap: 2.5rem !important;
         width: 100% !important;
       }
+
+      /* إصلاح الصورة الرئيسية (Hero Image) */
+      .device-showcase {
+        display: block !important;
+        width: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto 2rem auto !important;
+        perspective: none !important;
+      }
+      .device-container { animation: none !important; transform: none !important; }
+      .phone-mockup {
+        width: 260px !important;
+        height: 520px !important;
+        margin: 0 auto !important;
+      }
+
+      /* إصلاح النصوص عشان متخرجش بره الشاشة */
+      .hero-title { 
+        font-size: 2.5rem !important; 
+        text-align: center !important;
+        line-height: 1.2 !important;
+      }
+      .hero-text { text-align: center !important; width: 100% !important; }
+      .hero-description { font-size: 1rem !important; margin: 1.5rem auto !important; }
+
+      /* إصلاح الـ Design Process (الخطوات) */
+      .stats-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 1.5rem !important;
+      }
+      .stat-card { width: 100% !important; }
+
+      /* إصلاح صورة الـ About */
+      .image-frame {
+        width: 280px !important;
+        height: 350px !important;
+        margin: 0 auto !important;
+      }
+
+      /* منع خروج الكلام بره الشاشة (زي الإيميل) */
+      .contact-card {
+        width: 100% !important;
+        flex-direction: column !important;
+        padding: 1.5rem !important;
+        word-break: break-word !important;
+      }
+      .contact-value { font-size: 0.9rem !important; }
+    }
+
+    /* لمسة أخيرة للأجهزة الصغيرة جداً */
+    @media (max-width: 480px) {
+      .hero-title { font-size: 2rem !important; }
+      .section-title { font-size: 1.8rem !important; }
     }
 </style>
   <style>@view-transition { navigation: auto; }</style>
@@ -1339,6 +1374,7 @@
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b94410226d33d73',t:'MTc2NzYyOTUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 </html>
+
 
 
 
